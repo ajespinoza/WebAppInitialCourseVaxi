@@ -1,0 +1,8 @@
+<h1>Componente usuario</h1>
+<input *ngIf="visible" type="text" [(ngModel)]="valor">
+<button *ngIf="visible" type="button" (click)="onAgregarUsuario()">Agregar</button>
+<br>
+<br>
+<div *ngFor="let usr of usuarios">
+  <input type="text" value={{usr}}>
+</div>
