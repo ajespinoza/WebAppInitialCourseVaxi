@@ -3,4 +3,4 @@
   <input type="text" name="nombreLibro" ngModel required>
   <button type="submit">Agregar libro</button>
 </form>
-<app-libro (libroClicked)="eliminarLibro(libro)" *ngFor="let libro of libros" [tituloLibro]="libro"></app-libro>
+<app-libro *ngFor="let libro of libros" [tituloLibro]="libro"></app-libro>
